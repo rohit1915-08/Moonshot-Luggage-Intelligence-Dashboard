@@ -39,6 +39,6 @@ The pipeline is broken into four distinct layers:
 
 1. Clone the repository:
    ```bash
-   git clone [Insert Your GitHub Repo Link Here]
+   git clone [https://github.com/rohit1915-08/Moonshot-Luggage-Intelligence-Dashboard]
    cd moonshot_luggage_dashboard
    ```
