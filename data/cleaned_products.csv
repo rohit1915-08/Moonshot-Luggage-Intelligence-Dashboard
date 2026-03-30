@@ -1,7 +1,6 @@
 Brand,Product Title,Price,List Price,Discount,Rating,Review Count,Sentiment_Score
-American Tourister,Unknown,2549.0,7900.0,67.7,4.2,0,0.6266666666666666
+American Tourister,Unknown,2299.0,7500.0,69.3,4.2,0,0.6266666666666666
 American Tourister,Unknown,2549.0,8490.0,70.0,4.3,0,0.6266666666666666
-American Tourister,Unknown,2585.0,4100.0,37.0,4.5,0,0.6266666666666666
 American Tourister,Unknown,2799.0,7390.0,62.1,4.3,0,0.6266666666666666
 American Tourister,Unknown,2799.0,7500.0,62.7,4.1,0,0.6266666666666666
 American Tourister,Unknown,3399.0,4800.0,29.2,4.5,0,0.6266666666666666
@@ -9,37 +8,36 @@ American Tourister,Unknown,3499.0,9950.0,64.8,4.2,0,0.6266666666666666
 American Tourister,Unknown,3799.0,9800.0,61.2,4.1,0,0.6266666666666666
 American Tourister,Unknown,4099.0,9749.0,58.0,3.5,0,0.6566666666666667
 American Tourister,Unknown,4299.0,9000.0,52.2,4.1,0,0.6266666666666666
-American Tourister,Unknown,4499.0,12300.0,63.4,4.1,0,0.6266666666666666
 American Tourister,Unknown,5052.0,29100.0,82.6,4.0,0,0.6266666666666666
-Aristocrat,Unknown,1399.0,7700.0,81.8,4.1,0,0.66
-Aristocrat,Unknown,1499.0,7500.0,80.0,4.1,0,0.66
+American Tourister,Unknown,7499.0,13999.0,46.4,4.4,0,0.6266666666666666
+Aristocrat,Unknown,1519.0,7990.0,81.0,4.1,0,0.66
 Aristocrat,Unknown,1849.0,8125.0,77.2,4.2,0,0.66
-Aristocrat,Unknown,2198.0,11000.0,80.0,4.2,0,0.66
-Aristocrat,Unknown,2386.0,8490.0,71.9,4.1,0,0.66
+Aristocrat,Unknown,1999.0,12920.0,84.5,4.1,0,0.66
+Aristocrat,Unknown,2169.0,8490.0,74.5,4.1,0,0.66
+Aristocrat,Unknown,2239.0,9300.0,75.9,4.3,0,0.66
 Aristocrat,Unknown,2399.0,11670.0,79.4,4.1,0,0.66
-Aristocrat,Unknown,2859.0,14375.0,80.1,4.2,0,0.66
-Aristocrat,Unknown,2899.0,22920.0,87.4,4.1,0,0.66
-Aristocrat,Unknown,3035.0,11240.0,73.0,4.3,0,0.66
-Aristocrat,Unknown,3134.0,11240.0,72.1,4.2,0,0.66
-Aristocrat,Unknown,3199.0,14799.0,78.4,4.1,0,0.66
-Aristocrat,Unknown,3651.0,18880.0,80.7,4.1,0,0.66
+Aristocrat,Unknown,2499.0,9800.0,74.5,4.0,0,0.66
+Aristocrat,Unknown,2849.0,11240.0,74.7,4.2,0,0.66
+Aristocrat,Unknown,2999.0,8450.0,64.5,4.2,0,0.66
+Aristocrat,Unknown,3299.0,8600.0,61.6,4.1,0,0.66
+Aristocrat,Unknown,3319.0,18880.0,82.4,4.1,0,0.66
+Aristocrat,Unknown,4099.0,9749.0,58.0,3.5,0,0.6566666666666667
 Nasher Miles,Unknown,2599.0,13995.0,81.4,4.2,0,0.66
 Nasher Miles,Unknown,2699.0,13995.0,80.7,4.2,0,0.66
+Nasher Miles,Unknown,2798.0,16995.0,83.5,3.7,0,0.6566666666666667
 Nasher Miles,Unknown,2969.0,15995.0,81.4,4.2,0,0.66
-Nasher Miles,Unknown,2999.0,15995.0,81.3,4.2,0,0.66
+Nasher Miles,Unknown,3199.0,13995.0,77.1,4.2,0,0.66
 Nasher Miles,Unknown,3229.0,17995.0,82.1,4.2,0,0.66
 Nasher Miles,Unknown,3499.0,17995.0,80.6,4.2,0,0.66
 Nasher Miles,Unknown,3599.0,17995.0,80.0,4.2,0,0.66
 Nasher Miles,Unknown,3699.0,16995.0,78.2,4.4,0,0.66
-Nasher Miles,Unknown,3949.0,13995.0,71.8,4.2,0,0.66
-Nasher Miles,Unknown,4199.0,17995.0,76.7,4.2,0,0.66
+Nasher Miles,Unknown,4599.0,15995.0,71.2,4.0,0,0.66
 Nasher Miles,Unknown,4999.0,18995.0,73.7,4.0,0,0.66
 Safari,Unknown,1399.0,6999.0,80.0,4.0,0,0.66
-Safari,Unknown,1699.0,8999.0,81.1,4.2,0,0.66
+Safari,Unknown,1699.0,8999.0,81.1,4.2,0,0.6599999999999999
 Safari,Unknown,1899.0,8999.0,78.9,4.0,0,0.66
 Safari,Unknown,2299.0,10999.0,79.1,4.2,0,0.66
 Safari,Unknown,2499.0,9800.0,74.5,4.0,0,0.66
-Safari,Unknown,4199.0,19998.0,79.0,4.2,0,0.66
 Safari,Unknown,4999.0,23998.0,79.2,4.0,0,0.66
 Safari,Unknown,4999.0,27997.0,82.1,4.0,0,0.66
 Safari,Unknown,5599.0,29100.0,80.8,4.0,0,0.66
@@ -47,23 +45,23 @@ Skybags,Unknown,692.0,2230.0,69.0,4.2,0,0.66
 Skybags,Unknown,1089.0,4620.0,76.4,4.2,0,0.66
 Skybags,Unknown,1399.0,4450.0,68.6,4.1,0,0.66
 Skybags,Unknown,1848.0,7060.0,73.8,4.4,0,0.66
-Skybags,Unknown,1919.0,6825.0,71.9,4.2,0,0.66
+Skybags,Unknown,2379.0,7500.0,68.3,4.2,0,0.66
 Skybags,Unknown,2499.0,6940.0,64.0,4.1,0,0.66
-Skybags,Unknown,2617.0,7500.0,65.1,4.2,0,0.66
+Skybags,Unknown,2599.0,9100.0,71.4,4.2,0,0.66
+Skybags,Unknown,2849.0,9000.0,68.3,4.2,0,0.66
 Skybags,Unknown,3099.0,9050.0,65.8,4.2,0,0.66
-Skybags,Unknown,3134.0,9000.0,65.2,4.2,0,0.66
-Skybags,Unknown,4099.0,9749.0,58.0,3.5,0,0.6566666666666667
 Skybags,Unknown,5052.0,29100.0,82.6,4.0,0,0.66
-Skybags,Unknown,5299.0,14000.0,62.2,4.2,0,0.66
+Skybags,Unknown,5799.0,29297.0,80.2,4.1,0,0.66
+Skybags,Unknown,6160.0,7700.0,20.0,4.3,0,0.66
 VIP,Unknown,2199.0,9900.0,77.8,4.2,0,0.66
-VIP,Unknown,2749.0,9240.0,70.2,4.2,0,0.66
-VIP,Unknown,2999.0,8450.0,64.5,4.2,0,0.66
+VIP,Unknown,2499.0,9240.0,73.0,4.2,0,0.66
+VIP,Unknown,2849.0,11240.0,74.7,4.2,0,0.66
 VIP,Unknown,3119.0,14990.0,79.2,3.7,0,0.6566666666666667
-VIP,Unknown,3134.0,11240.0,72.1,4.2,0,0.66
 VIP,Unknown,3199.0,9770.0,67.3,3.7,0,0.6566666666666667
-VIP,Unknown,3270.0,12600.0,74.0,4.2,0,0.66
 VIP,Unknown,3299.0,8600.0,61.6,4.1,0,0.66
 VIP,Unknown,3379.0,12600.0,73.2,4.2,0,0.66
 VIP,Unknown,4099.0,9749.0,58.0,3.5,0,0.6566666666666667
 VIP,Unknown,5052.0,29100.0,82.6,4.0,0,0.66
-VIP,Unknown,7358.0,19998.0,63.2,4.1,0,0.66
+VIP,Unknown,5919.0,25880.0,77.1,4.1,0,0.66
+VIP,Unknown,6689.0,19998.0,66.6,4.1,0,0.66
+VIP,Unknown,8999.0,13000.0,30.8,4.3,0,0.66

@@ -1,7 +1,7 @@
 # Moonshot AI Agent Internship: Luggage Competitive Intelligence
 
-**Live Dashboard:** [Insert Your Streamlit Cloud Link Here]
-**Walkthrough Video:** [Insert Your Loom Link Here]
+**Live Dashboard:** [https://moonshot-luggage-intelligence-dashboard-1.streamlit.app/]
+**Walkthrough Video:** [(https://www.loom.com/share/922d2c11e3df477dbf92df89b7593a2a)]
 
 ---
 
