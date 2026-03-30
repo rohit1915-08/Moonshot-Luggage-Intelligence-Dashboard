@@ -7,6 +7,16 @@
 
 This project is a competitive intelligence dashboard designed to synthesize messy marketplace signals from Amazon India into a decision-ready interface. It tracks 6 major luggage brands (Safari, Skybags, American Tourister, VIP, Aristocrat, Nasher Miles), analyzing pricing strategies, discount reliance, and customer sentiment to surface non-obvious market dynamics.
 
+## Submission Deliverables Included
+
+As per the assignment requirements, this submission package includes:
+
+1. **Working Dashboard:** Deployed live via Streamlit Cloud (link above).
+2. **Walkthrough Video:** A 3-5 minute Loom presentation focusing on Agent Insights, Brand Comparisons, and Product Thinking (link above).
+3. **Cleaned Dataset:** Located in `data/cleaned_products.csv`.
+4. **Source Code:** Modular architecture pushed to this repository.
+5. **Architecture & Limitations:** Documented below in this README.
+
 ## System Architecture & Approach
 
 The pipeline is broken into four distinct layers:
@@ -38,7 +48,29 @@ The pipeline is broken into four distinct layers:
 ### Installation
 
 1. Clone the repository:
+
    ```bash
-   git clone [https://github.com/rohit1915-08/Moonshot-Luggage-Intelligence-Dashboard]
+   git clone [https://github.com/rohit1915-08/Moonshot-Luggage-Intelligence-Dashboard.git](https://github.com/rohit1915-08/Moonshot-Luggage-Intelligence-Dashboard.git)
    cd moonshot_luggage_dashboard
    ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up environment variables:
+   - Create a `.env` file in the root directory and add your Groq API key:
+     ```
+     GROQ_API_KEY=your_groq_api_key
+     ```
+
+4. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+
+## Usage
+
+1. Open your web browser and navigate to `http://localhost:8501`.
