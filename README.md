@@ -3,74 +3,100 @@
 **Live Dashboard:** [Insert Your Streamlit Cloud Link Here]
 **Walkthrough Video:** [Insert Your Loom Link Here]
 
+---
+
 ## Project Objective
 
-This project is a competitive intelligence dashboard designed to synthesize messy marketplace signals from Amazon India into a decision-ready interface. It tracks 6 major luggage brands (Safari, Skybags, American Tourister, VIP, Aristocrat, Nasher Miles), analyzing pricing strategies, discount reliance, and customer sentiment to surface non-obvious market dynamics.
+This project is a competitive intelligence dashboard designed to synthesize marketplace signals from Amazon India into a decision-ready interface. It tracks major luggage brands like Safari, Skybags, American Tourister, and VIP, analyzing pricing strategies, discount reliance, and customer sentiment to surface non-obvious market dynamics.
+
+---
 
 ## Submission Deliverables Included
 
 As per the assignment requirements, this submission package includes:
 
-1. **Working Dashboard:** Deployed live via Streamlit Cloud (link above).
-2. **Walkthrough Video:** A 3-5 minute Loom presentation focusing on Agent Insights, Brand Comparisons, and Product Thinking (link above).
-3. **Cleaned Dataset:** Located in `data/cleaned_products.csv`.
-4. **Source Code:** Modular architecture pushed to this repository.
-5. **Architecture & Limitations:** Documented below in this README.
+- **Working Dashboard:** Deployed live via Streamlit Cloud.
+- **Source Code:** Modular architecture pushed to this repository.
+- **README:** Documentation covering setup, approach, and limitations.
+- **Cleaned Dataset:** Located in `data/cleaned_products.csv`.
+
+---
 
 ## System Architecture & Approach
 
 The pipeline is broken into four distinct layers:
 
-1. **Scraping Layer (`scraper/amazon_scraper.py`):** - Built with **Playwright** (async) to render JavaScript-heavy Amazon pages.
-   - Implements human-like delays, random user-agent rotation, and a smart-retry loop to bypass Amazon's 503 WAF (Web Application Firewall) blocks.
-   - Extracts product titles, selling prices, list prices, discounts, ratings, and review counts.
+1. **Scraping Layer** (`scraper/amazon_scraper.py`): Built with Playwright to render JavaScript-heavy Amazon India listings and reviews.
+2. **Analysis Layer** (`analysis/sentiment_engine.py`): Utilizes Pandas and TextBlob for data cleaning and baseline NLP sentiment calculation.
+3. **Intelligence Layer** (`analysis/agent_insights.py`): Integrates the Groq API (Llama 3) to automatically generate 5 non-obvious strategic conclusions from the data.
+4. **Presentation Layer** (`app.py`): Built with Streamlit to provide a clean, interactive UI for decision-makers.
 
-2. **Analysis Layer (`analysis/sentiment_engine.py`):**
-   - Utilizes **Pandas** for data cleaning and aggregation.
-   - Implements **TextBlob** for baseline NLP sentiment calculation, normalizing polarity scores to a 0.0 - 1.0 scale to identify positive, neutral, and negative product reception.
-
-3. **Intelligence Layer (`analysis/agent_insights.py`):**
-   - Integrates the **Groq API (Llama 3)** to act as an autonomous agent.
-   - Instead of static reporting, the LLM analyzes the aggregated statistical matrix to automatically generate 5 non-obvious strategic insights (e.g., Value vs. Sentiment Traps, Discount Elasticity).
-
-4. **Presentation Layer (`app.py` & `views/`):**
-   - Built entirely in **Streamlit**.
-   - Features custom CSS mimicking Amazon's native UI (Dark Navy and Orange palette) to reduce cognitive load for e-commerce decision-makers.
-   - Includes dynamic filtering (brand, price, rating, sentiment) and interactive Plotly visualization matrices.
+---
 
 ## Local Setup Instructions
 
-### Prerequisites
+### 1. Prerequisites
 
 - Python 3.9+
 - Groq API Key
 
-### Installation
+### 2. Installation
 
-1. Clone the repository:
+Clone the repository:
 
-   ```bash
-   git clone [https://github.com/rohit1915-08/Moonshot-Luggage-Intelligence-Dashboard.git](https://github.com/rohit1915-08/Moonshot-Luggage-Intelligence-Dashboard.git)
-   cd moonshot_luggage_dashboard
-   ```
+```powershell
+git clone https://github.com/rohit1915-08/Moonshot-Luggage-Intelligence-Dashboard.git
+cd moonshot_luggage_dashboard
+```
 
-2. Install dependencies:
+Create and activate a virtual environment:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
 
-3. Set up environment variables:
-   - Create a `.env` file in the root directory and add your Groq API key:
-     ```
-     GROQ_API_KEY=your_groq_api_key
-     ```
+Install dependencies:
 
-4. Run the Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
+```powershell
+pip install -r requirements.txt
+playwright install chromium
+```
 
-## Usage
+Configure environment variables — create a `.env` file in the root directory and add your API key:
 
-1. Open your web browser and navigate to `http://localhost:8501`.
+```
+GROQ_API_KEY="your_actual_api_key_here"
+```
+
+---
+
+## Running the Data Pipeline
+
+To execute the pipeline from scratch, run these commands in order:
+
+**1. Scrape live data:**
+
+```powershell
+python scraper/amazon_scraper.py
+```
+
+**2. Clean data and apply NLP sentiment:**
+
+```powershell
+python analysis/sentiment_engine.py
+```
+
+**3. Launch the dashboard:**
+
+```powershell
+streamlit run app.py
+```
+
+---
+
+## Limitations & Future Improvements
+
+- **Bot Mitigation:** Current scraping is subject to Amazon's request limits; future versions could implement rotating proxies.
+- **Aspect-Level Sentiment:** Expanding NLP to specifically analyze wheels, handles, and zippers for deeper durability insights.
+- **Historical Trends:** Transitioning from a snapshot to a time-series database to track pricing fluctuations over time.
